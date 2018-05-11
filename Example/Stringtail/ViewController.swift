@@ -7,18 +7,22 @@
 //
 
 import UIKit
+import Stringtail
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+final class ViewController: UIViewController {
+  @IBOutlet weak var label: UILabel!
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    let hello = "hello".with {
+      $0.font = .systemFont(ofSize: 42)
+      $0.paragraphStyle.alignment = .left
+      $0.textColor = .red
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    let world = "world".with {
+      $0.font = .systemFont(ofSize: 12)
+      $0.paragraphStyle.alignment = .left
+      $0.textColor = .blue
     }
-
+    label.attributedText = hello + .space(10) + world
+  }
 }
-

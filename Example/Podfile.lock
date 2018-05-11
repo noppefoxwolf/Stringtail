@@ -1,0 +1,16 @@
+PODS:
+  - Stringtail (0.1.0)
+
+DEPENDENCIES:
+  - Stringtail (from `../`)
+
+EXTERNAL SOURCES:
+  Stringtail:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Stringtail: e55655e433e044ecc419e08819e5ce12a1ab1a91
+
+PODFILE CHECKSUM: 846d5af5d663bb3056b1d029961f1b5725646234
+
+COCOAPODS: 1.5.2

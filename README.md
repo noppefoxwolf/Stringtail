@@ -1,9 +1,26 @@
 # Stringtail
 
-[![CI Status](https://img.shields.io/travis/🦊Tomoya Hirano/Stringtail.svg?style=flat)](https://travis-ci.org/🦊Tomoya Hirano/Stringtail)
+[![CI Status](https://img.shields.io/travis/noppefoxwolf/Stringtail.svg?style=flat)](https://travis-ci.org/noppefoxwolf/Stringtail)
 [![Version](https://img.shields.io/cocoapods/v/Stringtail.svg?style=flat)](https://cocoapods.org/pods/Stringtail)
 [![License](https://img.shields.io/cocoapods/l/Stringtail.svg?style=flat)](https://cocoapods.org/pods/Stringtail)
 [![Platform](https://img.shields.io/cocoapods/p/Stringtail.svg?style=flat)](https://cocoapods.org/pods/Stringtail)
+
+
+## Usage
+
+```
+let hello = "hello".with {
+  $0.font = .systemFont(ofSize: 42)
+  $0.paragraphStyle.alignment = .left
+  $0.textColor = .red
+}
+let world = "world".with {
+  $0.font = .systemFont(ofSize: 12)
+  $0.paragraphStyle.alignment = .left
+  $0.textColor = .blue
+}
+label.attributedText = hello + .space(10) + world
+```
 
 ## Example
 
@@ -22,7 +39,7 @@ pod 'Stringtail'
 
 ## Author
 
-🦊Tomoya Hirano, tomoya.hirano@dena.com
+🦊Tomoya Hirano, noppelabs@gmail.com
 
 ## License
 
