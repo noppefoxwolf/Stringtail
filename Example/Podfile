@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Stringtail_Example' do
+  pod 'Stringtail', :path => '../'
+
+  target 'Stringtail_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
