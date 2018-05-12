@@ -8,7 +8,7 @@
 
 ## Usage
 
-```
+```swift
 let hello = "hello".with {
   $0.font = .systemFont(ofSize: 42)
   $0.paragraphStyle.alignment = .left
